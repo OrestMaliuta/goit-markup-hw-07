@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
     
@@ -33,7 +33,7 @@
                         <ul class="contacts">
 
                             <li class="contacts__item"> 
-                                        <a href="mailto:info@devstudio.com" class="contacts-link__mailto">
+                                        <a href="mailto:info@devstudio.com" class="contacts__mailto-link">
                                         
                                             <svg class="contacts__icons" width="20px" height="16px">
                                             
@@ -47,7 +47,7 @@
                              </li>
 
                             <li class="contacts__item"> 
-                                    <a href="tel:+380961111111" class="contacts-link__tel">
+                                    <a href="tel:+380961111111" class="contacts__tel-link">
                                         <svg class="contacts__icons" width="20px" height="16px">
                                         
                                             <use href="./images/icons.svg#icon-smartphone"></use>
@@ -187,7 +187,11 @@
                     
                     <li class="team-card">
                         
-                            <img src="./images/1.jpg" alt="фото робітника" width="270">
+                            
+                        
+                        <img src="./images/1.jpg" alt="фото робітника" width="270">
+                        
+                        
                         <div class="div-team-card">
                             <h3>Ігор Дем'яненко</h3>
                             <p>Product Designer</p>
@@ -480,103 +484,104 @@
     <footer class="footer">
         <div class="conteiner-footer">
             <div class="text-footer">
-                <a class="logo-studio-footer" href="/index.html"><span class="logo-web">Web</span>Studio</a>
-
-            
-            <address> 
-
-                
-
-                <ul class="link-footer-css">
-                    <li>
-                        <a  href="https://goo.gl/maps/pFW4mfFTcQWzBByp8" target="_blank " rel="noreferrer noopener" class="footer-adress">м. Київ, пр-т Лесі Українки, 26</a>
+                <a class="logo-studio-footer" href="/index.html"><span class="logo-web-footer">Web</span>Studio</a>
+    
+    
+                <address>
+    
+    
+    
+                    <ul class="link-footer-css">
+                        <li>
+                            <a href="https://goo.gl/maps/pFW4mfFTcQWzBByp8" target="_blank " rel="noreferrer noopener"
+                                class="footer-adress">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+    
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a>
+                        </li>
+    
+                        <li>
+                            <a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+    
+            <div class="footer-soc-links">
+                <h2>Приєднуйтесь</h2>
+    
+                <ul class="footer-soc-list">
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link">
+    
+                            <svg class="footer-soc-icons" width="20px" height="20px">
+    
+                                <use href="./images/icons.svg#icon-instagram"></use>
+    
+                            </svg>
+                        </a>
                     </li>
-
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a>
+    
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link">
+    
+                            <svg class="footer-soc-icons" width="20px" height="20px">
+    
+                                <use href="./images/icons.svg#icon-twitter"></use>
+    
+                            </svg>
+                        </a>
                     </li>
-
-                    <li>
-                    <a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a>
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link">
+    
+                            <svg class="footer-soc-icons" width="20px" height="20px">
+    
+                                <use href="./images/icons.svg#icon-facebook"></use>
+    
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link">
+    
+                            <svg class="footer-soc-icons" width="20px" height="20px">
+    
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+    
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
             </div>
-          
-
-        <div class="div-soc-links">
-            <h2>Приєднуйтесь</h2>
-
-            <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-                <a href="#" class="footer-soc-link">
-        
-                    <svg class="footer-soc-icons" width="20px" height="20px">
-        
-                        <use href="./images/icons.svg#icon-instagram"></use>
-        
-                    </svg>
-                </a>
-            </li>
-        
-            <li class="footer-soc-item">
-                <a href="#" class="footer-soc-link">
-        
-                    <svg class="footer-soc-icons" width="20px" height="20px">
-        
-                        <use href="./images/icons.svg#icon-twitter"></use>
-        
-                    </svg>
-                </a>
-            </li>
-            <li class="footer-soc-item">
-                <a href="#" class="footer-soc-link">
-        
-                    <svg class="footer-soc-icons" width="20px" height="20px">
-        
-                        <use href="./images/icons.svg#icon-facebook"></use>
-        
-                    </svg>
-                </a>
-            </li>
-            <li class="footer-soc-item">
-                <a href="#" class="footer-soc-link">
-        
-                    <svg class="footer-soc-icons" width="20px" height="20px">
-        
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-        
-                    </svg>
-                </a>
-            </li>
-            </ul>
-        </div>
-        <div class="subscribe-tg">
-            <form class="subscribe-tg-form">
-
-                <label for="mail">Підпишіться на розсилку</label>
-                <div class="subscribe-box">
-                    <input type="email" name="mail" id="mail" required placeholder="Email">
-
-                    
+            <div class="subscribe-tg">
+                <form class="subscribe-tg-form">
+    
+                    <label for="mail">Підпишіться на розсилку</label>
+                    <div class="subscribe-box">
+                        <input type="email" name="mail" id="mail" required placeholder="Email">
+    
+    
                         <button type="submit">Підписатися
                             <svg class="subscribe-icon" width="20px" height="20px">
-                            
+    
                                 <use href="./images/iconsend.svg#icon-send"></use>
-                            
+    
                             </svg>
                         </button>
-
-                </div>
-                    
-                
-            </form>
-
+    
+                    </div>
+    
+    
+                </form>
+    
+            </div>
+    
+    
+    
         </div>
-
-
-
-    </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>

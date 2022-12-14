@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./dist/css/main.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                         <nav>
                             <ul class="site-nav">   
                                 
-                                <li class="site-nav__item"><a href="#" class="site-nav__link">Студія</a></li>
+                                <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
                                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
                                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
                             </ul>
@@ -33,7 +33,7 @@
                         <ul class="contacts">
 
                             <li class="contacts__item"> 
-                                        <a href="mailto:info@devstudio.com" class="contacts-link__mailto">
+                                        <a href="mailto:info@devstudio.com" class="contacts__mailto-link">
                                         
                                             <svg class="contacts__icons" width="20px" height="16px">
                                             
@@ -47,7 +47,7 @@
                              </li>
 
                             <li class="contacts__item"> 
-                                    <a href="tel:+380961111111" class="contacts-link__tel">
+                                    <a href="tel:+380961111111" class="contacts__tel-link">
                                         <svg class="contacts__icons" width="20px" height="16px">
                                         
                                             <use href="./images/icons.svg#icon-smartphone"></use>
@@ -63,16 +63,16 @@
     </header>
     <main class="main-flex">
         
-        <section class="section-property section">
+        <section class="section">
             
                 
                 <h1 class="visually-hidden">Наші проекти</h1>
                 <ul class="buttons-filters">
-                    <li><button type="button" class="button-filter all">Усі</button></li>
-                    <li><button type="button" class="button-filter">Веб-сайти</button></li>
-                    <li><button type="button" class="button-filter">Додатки</button></li>
-                    <li><button type="button" class="button-filter">Дизайн</button></li>
-                    <li><button type="button" class="button-filter">Маркетинг</button></li>
+                    <li><button type="button" class="button-filter-item all">Усі</button></li>
+                    <li><button type="button" class="button-filter-item">Веб-сайти</button></li>
+                    <li><button type="button" class="button-filter-item">Додатки</button></li>
+                    <li><button type="button" class="button-filter-item">Дизайн</button></li>
+                    <li><button type="button" class="button-filter-item">Маркетинг</button></li>
                 </ul>
                 
 
@@ -83,7 +83,7 @@
                     <li class="cards">
                         
                             
-                        <a href="#" class="hover-a"> 
+                        <a href="#" class="cards-link"> 
                                 
                             <div class="description">
 
@@ -105,7 +105,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                                 <img src="./images/bascetball.jpg" alt="фото" width="370" style="display: block;">
                                 <p class="description-text">
@@ -122,7 +122,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/restaurant.jpg" alt="фото" width="370" style="display: block;">
@@ -140,7 +140,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/headset.jpg" alt="фото" width="370" style="display: block;">
@@ -158,7 +158,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/boxs.jpg" alt="фото" width="370" style="display: block;">
@@ -176,7 +176,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/computer.jpg" alt="фото" width="370" style="display: block;">
@@ -194,7 +194,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/limitededition.jpg" alt="фото" width="370" style="display: block;">
@@ -212,7 +212,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images//labeltag.jpg" alt="фото" width="370" style="display: block;">
@@ -231,7 +231,7 @@
                     </li>
 
                     <li class="cards">
-                        <a href="#" class="hover-a">
+                        <a href="#" class="cards-link">
                             <div class="description">
                             
                                 <img src="./images/growingbusiness.jpg" alt="фото" width="370" style="display: block;">
@@ -253,111 +253,108 @@
             
     </main>
 
-    <footer class="footer">
-        <div class="conteiner-footer">
-            <div class="text-footer">
-                <a class="logo-studio-footer" href="/index.html"><span class="logo-web">Web</span>Studio</a>
-    
-    
-                <address>
-    
-    
-    
-                    <ul class="link-footer-css">
-                        <li>
-                            <a href="https://goo.gl/maps/pFW4mfFTcQWzBByp8" target="_blank " rel="noreferrer noopener"
-                                class="footer-adress">м. Київ, пр-т Лесі Українки, 26</a>
-                        </li>
-    
-                        <li>
-                            <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a>
-                        </li>
-    
-                        <li>
-                            <a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-    
-            <div class="div-soc-links">
-                <h2>Приєднуйтесь</h2>
-    
-                <ul class="footer-soc-list">
-                    <li class="footer-soc-item">
-                        <a href="#" class="footer-soc-link">
-    
-                            <svg class="footer-soc-icons" width="20px" height="20px">
-    
-                                <use href="./images/icons.svg#icon-instagram"></use>
-    
-                            </svg>
-                        </a>
+<footer class="footer">
+    <div class="conteiner-footer">
+        <div class="text-footer">
+            <a class="logo-studio-footer" href="/index.html"><span class="logo-web-footer">Web</span>Studio</a>
+
+
+            <address>
+
+
+
+                <ul class="link-footer-css">
+                    <li>
+                        <a href="https://goo.gl/maps/pFW4mfFTcQWzBByp8" target="_blank " rel="noreferrer noopener"
+                            class="footer-adress">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
-    
-                    <li class="footer-soc-item">
-                        <a href="#" class="footer-soc-link">
-    
-                            <svg class="footer-soc-icons" width="20px" height="20px">
-    
-                                <use href="./images/icons.svg#icon-twitter"></use>
-    
-                            </svg>
-                        </a>
+
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a>
                     </li>
-                    <li class="footer-soc-item">
-                        <a href="#" class="footer-soc-link">
-    
-                            <svg class="footer-soc-icons" width="20px" height="20px">
-    
-                                <use href="./images/icons.svg#icon-facebook"></use>
-    
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-soc-item">
-                        <a href="#" class="footer-soc-link">
-    
-                            <svg class="footer-soc-icons" width="20px" height="20px">
-    
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-    
-                            </svg>
-                        </a>
+
+                    <li>
+                        <a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
+            </address>
+        </div>
 
-            <div class="subscribe-tg">
-                <form class="subscribe-tg-form">
-            
-                    <label for="mail">Підпишіться на розсилку</label>
-                    <div class="subscribe-box">
-                        <input type="email" name="mail" id="mail"  required placeholder="Email">
-            
-            
-                        <button type="submit">Підписатися
-                            <svg class="subscribe-icon" width="20px" height="20px">
-            
-                                <use href="./images/iconsend.svg#icon-send"></use>
-            
-                            </svg>
-                        </button>
-            
-                    </div>
-            
-            
-                </form>
-            
-            </div>
+
+        <div class="footer-soc-links">
+            <h2>Приєднуйтесь</h2>
+
+            <ul class="footer-soc-list">
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link">
+
+                        <svg class="footer-soc-icons" width="20px" height="20px">
+
+                            <use href="./images/icons.svg#icon-instagram"></use>
+
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link">
+
+                        <svg class="footer-soc-icons" width="20px" height="20px">
+
+                            <use href="./images/icons.svg#icon-twitter"></use>
+
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link">
+
+                        <svg class="footer-soc-icons" width="20px" height="20px">
+
+                            <use href="./images/icons.svg#icon-facebook"></use>
+
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link">
+
+                        <svg class="footer-soc-icons" width="20px" height="20px">
+
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="subscribe-tg">
+            <form class="subscribe-tg-form">
+
+                <label for="mail">Підпишіться на розсилку</label>
+                <div class="subscribe-box">
+                    <input type="email" name="mail" id="mail" required placeholder="Email">
+
+
+                    <button type="submit">Підписатися
+                        <svg class="subscribe-icon" width="20px" height="20px">
+
+                            <use href="./images/iconsend.svg#icon-send"></use>
+
+                        </svg>
+                    </button>
+
+                </div>
+
+
+            </form>
 
         </div>
 
 
 
-
-
-    </footer>
+    </div>
+</footer>
     
 </body>
 </html>
