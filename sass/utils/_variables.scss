@@ -5,11 +5,25 @@ $icons-text-color: #AFB1B8;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
-li {list-style: none;}
+li {
+    list-style: none;
+}
 
-h1, h2, h3, h4, h5, h6, p, ul { margin: 0; padding: 0;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 .section {
     padding-bottom: 94px;
