@@ -11,6 +11,8 @@
             pointer-events: none;
     
         }
+
+        
 }
 
 
@@ -43,7 +45,9 @@
             color: #212121;
             margin-bottom: 12px;
         }
+
 }
+
 
 
 
@@ -54,18 +58,22 @@
 }
 
 .modal-close-btn {
-    width: 30px;
-    height: 30px;
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    fill: $tittle-text-color;
+
     position: absolute;
     top: 8px;
     right: 8px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    fill: $tittle-text-color;
+
+      
         &:hover {
                 color: $accent-color;
                 transition: 250ms $timing-function;
@@ -95,18 +103,6 @@
     padding-right: 2px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .form-label {
