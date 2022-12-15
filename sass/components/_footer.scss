@@ -70,12 +70,12 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     &:hover {
-            text-decoration: underline;
+            
             color: $accent-color;
             transition: 250ms $timing-function;
         }
                 &:focus {
-                    text-decoration: underline;
+                
                     color: $accent-color;
                     transition: 250ms $timing-function;
                 }
